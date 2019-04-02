@@ -23,6 +23,6 @@ public class Dog extends Canine implements Pet{
         return " the dogs family name is " + getName();
     }
     public String home(){
-        return getName() + "lives in a home.";
+        return getName() + " lives in a home.";
     }
 }

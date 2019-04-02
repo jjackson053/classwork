@@ -54,6 +54,7 @@ public abstract class Account {
         this.depositMoney= depositMoney;
         this.withDrawMoney= withDrawMoney;
     }
-    public abstract int deposit();
-    public abstract int withDraw();
+    public abstract int deposit(int addMoney);
+    public abstract int withDraw(int takeMoney);
+    public abstract int setMyBalance();
 }

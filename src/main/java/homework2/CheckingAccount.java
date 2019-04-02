@@ -1,5 +1,6 @@
 package homework2;
 
+
 public class CheckingAccount extends Account {
     private int overDraft;
     private int priceOfItem;
@@ -9,12 +10,12 @@ public class CheckingAccount extends Account {
         this.overDraft = overDraft;
         this.priceOfItem = priceOfItem;
     }
-    public int deposit(){
+    public int deposit(int addMoney){
         int x = getDepositMoney() + getBalance();
         return  x;
     }
 
-    public int withDraw(){
+    public int withDraw(int takeMoney){
         int y = getBalance() - getWithDrawMoney();
         return  y;
     }
@@ -25,6 +26,9 @@ public class CheckingAccount extends Account {
         if (c < overDraft){
             return v;
         }
+        return getBalance();
+    }
+    public int setMyBalance(){
         return getBalance();
     }
 

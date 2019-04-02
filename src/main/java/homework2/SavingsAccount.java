@@ -9,15 +9,16 @@ public class SavingsAccount extends Account {
     }
 
 
-    public int deposit(){
-     int e = getDepositMoney() + getBalance();
+    public int deposit(int addMoney){
+     int e = addMoney + getBalance();
      return e;
     }
-    public int withDraw(){
-      int d = getBalance() - getWithDrawMoney();
-      return d;
+    public int withDraw(int takeMoney){
+        int d = getBalance() - takeMoney;
+        return d;
 
     }
+
     public String InterestRate(){
         String i = "";
         double x =  interestRate / 365;
@@ -26,4 +27,9 @@ public class SavingsAccount extends Account {
         return  i;
 
     }
+    public int setMyBalance(){
+        return   getBalance();
+
+    }
+
 }
